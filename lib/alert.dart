@@ -1,20 +1,10 @@
 import 'package:flutter/material.dart';
 
 class Alert extends StatelessWidget {
-  final BuildContext context;
   final String message;
-  final Dialog dialog;
   final void Function(bool) onConfirm;
 
-  Alert(
-      {@required this.context, @required this.message, @required this.dialog, @required this.onConfirm});
-
-  show() {
-    showDialog(
-        barrierDismissible: false,
-        context: context,
-        builder: (BuildContext context) => this.dialog);
-  }
+  Alert({@required this.message, @required this.onConfirm});
 
   @override
   Widget build(BuildContext context) {
