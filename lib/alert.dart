@@ -47,7 +47,7 @@ class Alert extends StatelessWidget {
                       Navigator.of(context).pop();
                     },
                     child: Text(
-                      'Não!',
+                      'Nãoa!',
                       style: TextStyle(
                           color: Theme.of(context).primaryColor,
                           fontSize: 18.0),
